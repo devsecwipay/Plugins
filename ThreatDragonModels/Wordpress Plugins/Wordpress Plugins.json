@@ -10,7 +10,169 @@
       {
         "title": "Threat Scope",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 359,
+                "y": 26
+              },
+              "angle": 0,
+              "id": "34b73123-fc1b-4909-8e57-f11375c9673b",
+              "z": 1,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "title": "XSS",
+                  "description": "Cross-site scripting attack",
+                  "mitigation": "filter data input"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Sign Up Form"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 68,
+                "y": 281
+              },
+              "angle": 0,
+              "id": "d7220fa0-09db-4467-a80b-ebe99917be58",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Malious User"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "d7220fa0-09db-4467-a80b-ebe99917be58"
+              },
+              "target": {
+                "id": "34b73123-fc1b-4909-8e57-f11375c9673b"
+              },
+              "vertices": [
+                {
+                  "x": 166,
+                  "y": 269
+                },
+                {
+                  "x": 84,
+                  "y": 39
+                },
+                {
+                  "x": 175,
+                  "y": 20
+                }
+              ],
+              "id": "21e6eed1-d146-41b1-9cf0-ad9dc1d7ab77",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 2",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 553,
+                "y": 185
+              },
+              "angle": 0,
+              "id": "314e3405-0f3e-4866-9ccd-4f9392b31174",
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "store 3"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "id": "314e3405-0f3e-4866-9ccd-4f9392b31174"
+              },
+              "target": {
+                "id": "34b73123-fc1b-4909-8e57-f11375c9673b"
+              },
+              "vertices": [
+                {
+                  "x": 299,
+                  "y": 200
+                }
+              ],
+              "id": "4d48f764-6568-4c41-a22d-a0878c40ee45",
+              "z": 5,
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": 1266.4193115234375,
+          "width": 790
+        }
       }
     ],
     "reviewer": "shay"
